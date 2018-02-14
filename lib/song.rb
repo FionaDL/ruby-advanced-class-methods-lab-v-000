@@ -51,7 +51,7 @@ class Song
     song_name = song[1].slice (".mp3")
 
     song = self.new
-    song.name = name
+    song.name = song_name
     song.artist_name = artist_name
     song
   end
