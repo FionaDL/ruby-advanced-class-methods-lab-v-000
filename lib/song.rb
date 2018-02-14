@@ -1,3 +1,5 @@
+require 'pry'
+
 class Song
   attr_accessor :name, :artist_name
   @@all = []
@@ -47,7 +49,7 @@ class Song
     song = filename.split ("-")
     artist_name = song[0]
     name = song[1].slice (".mp3")
-
+binding.pry
 
   end
 end
