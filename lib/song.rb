@@ -43,9 +43,8 @@ class Song
     Song.all.sort_by {|a| a.name }
   end
 
-  def self.new_from_filename (filename)
+  def self.new_from_filename 
     song = self.new
-    song.name = filename
-    
+    song.slice (\[-]\)
   end
 end
