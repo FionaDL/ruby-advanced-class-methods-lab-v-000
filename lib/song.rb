@@ -40,6 +40,6 @@ class Song
   end
 
   def self.alphabetical
-    Song.all.sort!
+    Song.all.sort_by {|a| a.name }
   end
 end
