@@ -48,6 +48,6 @@ class Song
     song.slice (/[-]/)
     song[0] = artist_name
     song[1] = name
-    
+
   end
 end
