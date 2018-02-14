@@ -47,7 +47,7 @@ class Song
     song = filename.split ("-")
     artist_name = song[0]
     name = song[1].splice (".mp3")
-    
+
 
   end
 end
