@@ -46,9 +46,13 @@ class Song
   end
 
   def self.new_from_filename (filename)
-    song = filename.split ("-")
+    file = filename.split ("-")
     artist_name = song[0]
     name = song[1].slice (".mp3")
+
+    song = self.new
+    song.name = name
+    song.artist_name = artist_name
 binding.pry
 
   end
